@@ -1,3 +1,4 @@
+# prototype
 class Location:
     district = ''
     city = ''
