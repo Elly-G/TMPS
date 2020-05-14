@@ -1,3 +1,4 @@
+#proxy pattern
 from random import randint
 
 class Client(object):
@@ -20,7 +21,6 @@ class Client(object):
 
     def status(self):
         return (self.cash or self.creditCard)
-
 
 class Manager(object):
     def __init__(self, client):
@@ -49,7 +49,6 @@ if __name__ == '__main__':
     credit = Client('Daniel')
     mgr = Manager(credit)
 
-    # mgr.send_player_on('vacation')
     mgr.send_client_on('creditCard')
 
     mgr.refuse_client(3000)
